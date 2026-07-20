@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Jeffrey Osterkamp, July 19, 2026 -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mood Changer</title>
+
+    <link rel="stylesheet" href="moods.css">
+
+    <script src="mood.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="moodDisplay">Choose Your Mood</h1>
+
+        <p id="quote">Select a mood below to change the page.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="moodButtonsHeading">
+            <h2 id="moodButtonsHeading">Mood Options</h2>
+
+            <div id="moodButtons">
+                <button type="button" id="happyBtn">Happy</button>
+                <button type="button" id="calmBtn">Calm</button>
+                <button type="button" id="angryBtn">Angry</button>
+                <button type="button" id="sleepyBtn">Sleepy</button>
+                <button type="button" id="randomBtn">Random Mood</button>
+            </div>
+        </section>
+
+        <section aria-labelledby="questionsHeading">
+            <h2 id="questionsHeading">Project Questions</h2>
+
+            <h3>Why is textContent safer than innerHTML?</h3>
+
+            <p>
+                The textContent property is safer because it adds content as
+                plain text. The innerHTML property can interpret HTML code,
+                which could allow unsafe scripts or unwanted HTML elements to
+                be added to the page.
+            </p>
+
+            <h3>
+                How are HTML elements connected to JavaScript variables using
+                DOM selection?
+            </h3>
+
+            <p>
+                HTML elements are connected to JavaScript variables by using
+                DOM selection methods such as document.querySelector(). The
+                selector locates an element by its ID, class, or tag and stores
+                it in a JavaScript variable.
+            </p>
+
+            <h3>
+                What would happen to the text box with id="text" if I added
+                this line: text.textContent = "Hello!"?
+            </h3>
+
+            <p>
+                The content inside the element with the ID of text would be
+                replaced with the words Hello!
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jeffrey Osterkamp</p>
+    </footer>
+</body>
+</html>
+
